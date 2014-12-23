@@ -1,7 +1,7 @@
 {
-  "name": "hubot-example",
+  "name": "hubot-clj",
   "description": "Evaluate one line of Clojurescript",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Cody Henshaw <cghensha@gmail.com>",
   "license": "MIT",
 
