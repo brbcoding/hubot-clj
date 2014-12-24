@@ -13,8 +13,6 @@
 # Author:
 #   jingweno
 #   
-# Packaged By:
-#   brbcoding
 
 ringSessionID = ''
 
