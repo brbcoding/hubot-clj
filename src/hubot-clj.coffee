@@ -12,7 +12,6 @@
 #
 # Author:
 #   jingweno
-#   
 
 ringSessionID = ''
 

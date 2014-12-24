@@ -1,0 +1,115 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish', './' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose publish [ './' ]
+5 verbose cache add [ './', null ]
+6 verbose cache add name=undefined spec="./" args=["./",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: './',
+7 verbose parsed url   path: './',
+7 verbose parsed url   href: './' }
+8 silly lockFile 0ee6c175- ./
+9 verbose lock ./ /Users/chenshaw/.npm/0ee6c175-.lock
+10 verbose tar pack [ '/Users/chenshaw/.npm/hubot-example/0.0.0/package.tgz', './' ]
+11 verbose tarball /Users/chenshaw/.npm/hubot-example/0.0.0/package.tgz
+12 verbose folder ./
+13 info prepublish hubot-example@0.0.0
+14 silly lockFile 04cb2bca-tar tar://./
+15 verbose lock tar://./ /Users/chenshaw/.npm/04cb2bca-tar.lock
+16 silly lockFile 6aa234a3--hubot-example-0-0-0-package-tgz tar:///Users/chenshaw/.npm/hubot-example/0.0.0/package.tgz
+17 verbose lock tar:///Users/chenshaw/.npm/hubot-example/0.0.0/package.tgz /Users/chenshaw/.npm/6aa234a3--hubot-example-0-0-0-package-tgz.lock
+18 silly lockFile 04cb2bca-tar tar://./
+19 silly lockFile 04cb2bca-tar tar://./
+20 silly lockFile 6aa234a3--hubot-example-0-0-0-package-tgz tar:///Users/chenshaw/.npm/hubot-example/0.0.0/package.tgz
+21 silly lockFile 6aa234a3--hubot-example-0-0-0-package-tgz tar:///Users/chenshaw/.npm/hubot-example/0.0.0/package.tgz
+22 silly lockFile fee4ac4c--npm-hubot-example-0-0-0-package /Users/chenshaw/.npm/hubot-example/0.0.0/package
+23 verbose lock /Users/chenshaw/.npm/hubot-example/0.0.0/package /Users/chenshaw/.npm/fee4ac4c--npm-hubot-example-0-0-0-package.lock
+24 silly lockFile fee4ac4c--npm-hubot-example-0-0-0-package /Users/chenshaw/.npm/hubot-example/0.0.0/package
+25 silly lockFile fee4ac4c--npm-hubot-example-0-0-0-package /Users/chenshaw/.npm/hubot-example/0.0.0/package
+26 silly lockFile 0ee6c175- ./
+27 silly lockFile 0ee6c175- ./
+28 silly publish { name: 'hubot-example',
+28 silly publish   description: 'Evaluate one line of Clojurescript',
+28 silly publish   version: '0.0.0',
+28 silly publish   author: { name: 'Cody Henshaw', email: 'cghensha@gmail.com' },
+28 silly publish   license: 'MIT',
+28 silly publish   keywords: [ 'hubot', 'hubot-scripts', 'hubot-clj' ],
+28 silly publish   repository: { type: 'git', url: 'git@github.com:brbcoding/hubot-clj.git' },
+28 silly publish   bugs: { url: 'https://github.com/brbcoding/hubot-clj/issues' },
+28 silly publish   dependencies: { 'coffee-script': '~1.6' },
+28 silly publish   devDependencies: { mocha: '*', chai: '*', 'sinon-chai': '*', sinon: '*' },
+28 silly publish   main: 'index.coffee',
+28 silly publish   scripts: { test: 'script/test' },
+28 silly publish   readme: '### hubot-clj\n\n#### Description\nPackaged [hubot clojure](https://github.com/github/hubot-scripts/blob/master/src/scripts/clojure.coffee) for NPM\n\n#### Installation\n`npm install --save hubot-clj`\n\nadd `["hubot-clj"]` to your `external-scripts.json`.\n\n#### Examples',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '512a0bcbde18f56b4c93c453f2465842ea542ed0',
+28 silly publish   homepage: 'https://github.com/brbcoding/hubot-clj',
+28 silly publish   _id: 'hubot-example@0.0.0',
+28 silly publish   _shasum: 'b75a88f0549932ac19d200bb0519601ca328651f',
+28 silly publish   _from: './' }
+29 verbose request where is /hubot-example
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 23490a5591517f34
+32 verbose url raw /hubot-example
+33 verbose url resolving [ 'https://registry.npmjs.org/', './hubot-example' ]
+34 verbose url resolved https://registry.npmjs.org/hubot-example
+35 verbose request where is https://registry.npmjs.org/hubot-example
+36 info trying registry request attempt 1 at 10:12:50
+37 http PUT https://registry.npmjs.org/hubot-example
+38 http 403 https://registry.npmjs.org/hubot-example
+39 verbose headers { date: 'Tue, 23 Dec 2014 15:12:50 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '2555',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-jfk1024-JFK',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1419347570.752013,VS0,VE92',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden user: brbcoding not authorized to modify hubot-example
+41 error Changed: description "An example script pacakage for Hubot" -> "Evaluate one line of Clojurescript"
+41 error Changed: dist-tags.latest "1.0.0" -> "0.0.0"
+41 error Added: versions.0.0.0
+41 error Changed: readme "# Hubot Example\u000a\u000aAn example script package for Hubot\u000a\u000a[![Build Status](https://travis-ci.org/hubot-scripts/hubot-example.png)](https://travis-ci.org/hubot-scripts/hubot-example)\u000a\u000a## Directory Structure\u000a\u000aUsing the common directory structure for hubot script packages it will be easy\u000ato manage and allow others to easily contribute to your package.\u000a\u000a### script\u000a\u000aThis directory is home to a couple of development scripts; `bootstrap` and `test`\u000athey're used to bootstrap the development environment and run tests\u000arespectively.\u000a\u000a### src\u000a\u000aThis directory is home to the actual hubot scripts in the package. Your\u000a`index.coffee` entry point will load the scripts from this directory.\u000a\u000a### test\u000a\u000aThis directory is home to any tests you write for your scripts. This example\u000apackage uses Mocha, Chai and Sinon to manage writing tests.\u000a\u000a## Advantages of Building a Package\u000a\u000aSome of the advantages of building an npm package for your hubot script(s) are:\u000a\u000a* You don't need to rely on when hubot-scripts package is released.\u000a* You can specify dependencies in the `package.json` rather than have users\u000a  manually specify them\u000a* You can easily add tests using your favourite frameworks and libraries\u000a" -> "### hubot-clj\u000a\u000a#### Description\u000aPackaged [hubot clojure](https://github.com/github/hubot-scripts/blob/master/src/scripts/clojure.coffee) for NPM\u000a\u000a#### Installation\u000a`npm install --save hubot-clj`\u000a\u000aadd `[\"hubot-clj\"]` to your `external-scripts.json`.\u000a\u000a#### Examples"
+41 error Changed: time.modified "2013-09-05T22:52:00.296Z" -> "2014-12-23T15:14:36.178Z"
+41 error Added: time.0.0.0
+41 error Changed: author.name "Tom Bell" -> "Cody Henshaw"
+41 error Changed: author.email "tomb@tomb.io" -> "cghensha@gmail.com"
+41 error Changed: repository.url "git://github.com/hubot-scripts/hubot-example.git" -> "git@github.com:brbcoding/hubot-clj.git"
+41 error Added: keywords.2
+41 error Changed: bugs.url "https://github.com/hubot-scripts/hubot-example/issues" -> "https://github.com/brbcoding/hubot-clj/issues"
+41 error Added: homepage
+41 error Added: _attachments: hubot-example
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 13.4.0
+44 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "./"
+45 error cwd /Users/chenshaw/Source/hubot-clj
+46 error node -v v0.10.33
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
